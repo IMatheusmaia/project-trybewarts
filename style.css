@@ -56,3 +56,11 @@ main > form {
 #trybewarts-forms-logo {
   height: 500px;
 }
+#NomeEsobrenome{
+  display: flex;
+  flex-flow: row;
+}
+#Mistura{
+  display: flex;
+  flex-flow: row;
+}
