@@ -4,21 +4,17 @@
     flex-direction: row;
     background-color: rgb(50, 167, 145);
     height: 50px;
-
     gap: 30px;
     justify-content: space-between;
     align-items: center;
 }
-
 .trybewarts-login{
     display: flex;
     flex-direction: row;
 }
-
 .trybewarts-login > input{
     height: 2rem;
 }
-
 .trybewarts-login > button{
     height: 2.4rem;
 }
@@ -30,14 +26,12 @@ font-size: 3rem;
   height: auto;
   width: 60px;
 }
-
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(108, 255, 23);
     height: 90vh;
 }
-
 main > form {
     display: flex;
     flex-direction: column;
@@ -46,4 +40,10 @@ main > form {
     background-color: white;
     margin-top: 3rem;
     align-self: center;
+}
+#evaluation-form{
+    flex-direction: column
+}
+#trybewarts-forms-logo{
+    height: 500px;
 }
