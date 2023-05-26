@@ -1,6 +1,22 @@
 .header{
+    padding: 1rem;
     display: flex;
+    flex-direction: row;
     background-color: rgb(50, 167, 145);
     height: 50px;
     width: 100%;
+    gap: 30px;
+}
+
+.trybewarts-login{
+    display: flex;
+    flex-direction: row;
+}
+
+.trybewarts-login > input{
+    height: 2rem;
+}
+
+.trybewarts-login > button{
+    height: 2.4rem;
 }
