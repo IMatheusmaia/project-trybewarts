@@ -6,6 +6,8 @@
     height: 50px;
     width: 100%;
     gap: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trybewarts-login{
@@ -19,4 +21,12 @@
 
 .trybewarts-login > button{
     height: 2.4rem;
+}
+#trybewarts-header-title{
+text-align: center;
+font-size: 3rem;
+}
+.trybewarts-header-logo{
+  height: auto;
+  width: 60px;
 }
