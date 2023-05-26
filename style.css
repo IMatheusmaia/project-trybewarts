@@ -4,7 +4,7 @@
     flex-direction: row;
     background-color: rgb(50, 167, 145);
     height: 50px;
-    width: 100%;
+
     gap: 30px;
     justify-content: space-between;
     align-items: center;
@@ -29,4 +29,21 @@ font-size: 3rem;
 .trybewarts-header-logo{
   height: auto;
   width: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(108, 255, 23);
+    height: 90vh;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 675px;
+    background-color: white;
+    margin-top: 3rem;
+    align-self: center;
 }
