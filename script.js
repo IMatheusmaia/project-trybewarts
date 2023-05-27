@@ -12,4 +12,15 @@ function validation() {
     }
   });
 }
+const checkbox = document.querySelector('#agreement');
+const button = document.querySelector('#submit-btn');
+function TrueEfalse() {
+  if (checkbox.checked) {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
+}
+
 validation();
+checkbox.addEventListener('change', TrueEfalse);
