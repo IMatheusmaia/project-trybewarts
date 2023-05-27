@@ -72,7 +72,7 @@ main > form {
   flex-flow: column;
 }
 
-#Nota{
+#Nota {
   display: flex;
   flex-flow: row;
 }
