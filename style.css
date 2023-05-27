@@ -42,7 +42,7 @@ main {
 main > form {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 500px;
   width: 675px;
   background-color: white;
   margin-top: 3rem;
@@ -65,4 +65,9 @@ main > form {
 #Mistura {
   display: flex;
   flex-flow: row;
+}
+
+#checkbox {
+  display: flex;
+  flex-flow: column;
 }
