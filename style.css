@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  width: 100%;
+}
+
 .header {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   background-color: rgb(50, 167, 145);
   height: 50px;
-  gap: 30px;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.header > h1 {
+  font-family: ' Raleway', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
 }
 
 .trybewarts-login {
   display: flex;
   flex-direction: row;
+  gap: 0.2rem;
 }
 
 .trybewarts-login > input {
   height: 2rem;
+  outline: none;
+  border: none;
 }
 
 .trybewarts-login > button {
-  height: 2.4rem;
+  height: 2.1rem;
+  outline: none;
+  border: none;
 }
 
 #trybewarts-header-title {
@@ -35,26 +53,69 @@
 main {
   display: flex;
   flex-direction: row;
+  padding: 1rem;
   background-color: rgb(108, 255, 23);
-  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main > form {
   display: flex;
   flex-direction: column;
+  padding: 1.5rem 1rem;
+  gap: 1.2rem;
   height: 600px;
   width: 675px;
   background-color: white;
-  margin-top: 3rem;
-  align-self: center;
+  border-radius: 4px;
 }
 
 #evaluation-form {
   flex-direction: column;
+  justify-content: flex-start;
+  font-family: ' Raleway', sans-serif;
+}
+
+#evaluation-form > div > input {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.226);
+}
+
+.stacks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: start;
+  gap: 0.5rem;
+}
+
+.stacks-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 1rem;
+}
+
+#checkbox > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  width: 350px;
 }
 
 #NomeEsobrenome {
@@ -67,12 +128,20 @@ main > form {
   flex-flow: row;
 }
 
-#checkbox {
-  display: flex;
-  flex-flow: column;
-}
-
 #Nota {
   display: flex;
   flex-flow: row;
+  align-items: center;
+  justify-content: start;
+}
+
+#Nota > div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 1rem;
 }
