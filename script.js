@@ -30,19 +30,30 @@ function verifyCheckBox() {
 }
 verifyCheckBox();
 
+function captureAndDelete() {
+  const spans = document.querySelectorAll('#span');
+  for (let i = 0; i < spans.length - 1; i += 1) {
+    spans[i].remove();
+  }
+}
+
 function countCaracteres() {
   const textArea = document.querySelector('textarea');
   const countArea = document.querySelector('#counter');
   const span = () => {
-    const beforeSpanText = document.querySelector('#counter > span');
-    if (beforeSpanText) {
-      beforeSpanText.remove();
-    } else {
-      const spanText = document.createElement('span');
-      spanText.innerText = `${textArea.textLength}`;
-      countArea.appendChild(spanText);
-    }
+    const spanText = document.createElement('span');
+    spanText.id = 'span';
+    spanText.innerText = `${textArea.textLength}`;
+    countArea.appendChild(spanText);
+    captureAndDelete();
   };
-  textArea.addEventListener('input', span);
+  span();
+  const inputEvent = () => { textArea.addEventListener('input', span); };
+  textArea.addEventListener('keydown', (e) => {
+    const keyboard = e.key;
+    if (keyboard !== 'Backspace' || keyboard !== 'Delete') {
+      inputEvent();
+    }
+  });
 }
 countCaracteres();
