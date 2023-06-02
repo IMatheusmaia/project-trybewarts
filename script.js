@@ -38,12 +38,12 @@ function captureAndDelete() {
 }
 
 function countCaracteres() {
-  const textArea = document.querySelector('textarea');
+  const textArea = document.querySelector('#textarea');
   const countArea = document.querySelector('#counter');
   const span = () => {
     const spanText = document.createElement('span');
     spanText.id = 'span';
-    spanText.innerText = `${textArea.textLength}`;
+    spanText.innerText = `${500 - textArea.textLength}`;
     countArea.appendChild(spanText);
     captureAndDelete();
   };

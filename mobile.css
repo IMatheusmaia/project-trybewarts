@@ -1,0 +1,147 @@
+@media ( max-width : 768px ) {
+
+  body {
+    width: 100vw;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 1rem;
+    gap: 1rem;
+    height: 50vh;
+    background-color: rgb(50, 167, 145);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trybewarts-header-logo {
+    height: auto;
+    width: 80px;
+  }
+
+  .header > h1 {
+    font-family: ' Raleway', sans-serif;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .trybewarts-login {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 70%;
+  }
+
+  .trybewarts-login > input {
+    height: 2rem;
+    outline: none;
+    border: none;
+  }
+
+  .trybewarts-login > button {
+    height: 2.1rem;
+    outline: none;
+    border: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(108, 255, 23);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #evaluation-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+    height: auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 4px;
+    justify-content: flex-start;
+    font-family: ' Raleway', sans-serif;
+  }
+
+  #evaluation-form > div > input {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.226);
+  }
+
+  #NomeEsobrenome {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  #Mistura {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #house {
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    height: 2rem;
+    padding: 0.5rem;
+    outline: none;
+  }
+
+  #checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #checkbox > div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  #Nota {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Nota > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media ( max-width : 768px ) {
+
+  .trybewarts-login {
+    width: 80%;
+  }
+
+  #trybewarts-forms-logo {
+    width: 50%;
+  }
+
+}
